@@ -11,3 +11,8 @@
 
 </body>
 </html> <3
+
+<!--To commit a piece of work and update what i have done to the github storebase.
+I press Ctrl + K and this automatically pushes my work to the github repsoitory -->
+
+<!--Ctrl + / to make a comment-->
