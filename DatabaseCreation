@@ -1,0 +1,16 @@
+create table users
+(
+  username varchar(30) not null
+    primary key,
+  role varchar(5) not null,
+  first_name varchar(35) not null,
+  second_name varchar(40) not null,
+  d_o_b date not null,
+  email varchar(100) not null,
+  password varchar(128) not null,
+  constraint username
+  unique (username)
+)
+  engine=InnoDB
+;
+

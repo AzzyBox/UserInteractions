@@ -98,7 +98,7 @@ $num_rows = mysqli_num_rows($result);
                     </div>
                     <div class="col-md-3">
                         <div class="well dash-box">
-                            <h4><a href="#">View All Users</a></h4>
+                            <h4><a href="UserViewing.php">View All Users</a></h4>
                         </div>
                     </div>
                 </div>

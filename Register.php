@@ -7,7 +7,7 @@ include 'includes/nav.php';
 ?>
 
 <div class="container">
-    <div class="col-md-9">
+    <div class="col-md-12">
         <div class="panel panel-default">
             <div class="panel-heading" style="background-color:  #095f59;">
                 <h3 class="panel-title">Register User</h3>
@@ -17,49 +17,43 @@ include 'includes/nav.php';
                     <div class="well dash-box">
                         <form class="form-horizontal" action="includes/registerUser.php">
                             <div class="form-group">
-                                <label class="control-label col-sm-2" for="username">Username:</label>
+                                <label class="control-label col-sm-2" for="usernameTextInput">Username:</label>
                                 <div class="col-sm-10">
                                     <input type="text" class="form-control" id="username" placeholder="Enter Username" name="username" required autofocus>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="control-label col-sm-2" for="email">Email:</label>
+                                <label class="control-label col-sm-2" for="emailTextInput">Email:</label>
                                 <div class="col-sm-10">
                                     <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required autofocus>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="control-label col-sm-2" for="pwd">Password:</label>
+                                <label class="control-label col-sm-2" for="pwd1Input">Password:</label>
                                 <div class="col-sm-10">
                                     <input type="password" class="form-control" id="pwd1" placeholder="Enter password" name="pwd1" required autofocus>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="control-label col-sm-2" for="pwd">Confirm Password:</label>
+                                <label class="control-label col-sm-2" for="pwd2TextInput">Confirm Password:</label>
                                 <div class="col-sm-10">
                                     <input type="password" class="form-control" id="pwd2" placeholder="Enter password" name="pwd2" required autofocus>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="control-label col-sm-2" for="fName">First name:</label>
+                                <label class="control-label col-sm-2" for="fNameTextInput">First name:</label>
                                 <div class="col-sm-10">
                                     <input type="text" class="form-control" id="fName" placeholder="Enter Your First Name" name="fName" required autofocus>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="control-label col-sm-2" for="sName">Second Name:</label>
+                                <label class="control-label col-sm-2" for="sNameTextInput">Second Name:</label>
                                 <div class="col-sm-10">
                                     <input type="text" class="form-control" id="sName" placeholder="Enter Your Surname" name="sName" required autofocus>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="control-label col-sm-2" for="DOB">Date Of Birth:</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="DOB" placeholder="Enter Your Date Of Birth" name="DOB" required autofocus>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label col-sm-2" for="sel1">Admin OR User?:</label>
+                                <label class="control-label col-sm-2" for="selectionInput">Admin OR User?:</label>
                                 <div class="col-sm-10">
                                 <select class="form-control" id="sel1" name="role">
                                      <option>User</option>
