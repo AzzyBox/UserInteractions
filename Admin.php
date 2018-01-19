@@ -15,27 +15,9 @@ $num_rows = mysqli_num_rows($result);
 ?>
 <header>
     <style>
-        table {
-            font-family: arial, sans-serif;
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        td, th {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-        }
-
-        tr:nth-child(even) {
-            background-color: #dddddd;
-        }
-
-        img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
+        .table {
+            margin: 0 auto;
+            width: 80%;
         }
     </style>
 </header>
@@ -69,34 +51,29 @@ $num_rows = mysqli_num_rows($result);
                 <div class="col-md-3">
                     <div class="well dash-box">
                         <h2><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> 2129</h2>
-                        <h4>Visitores</h4>
+                        <h4>Visitors</h4>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-        <div class="col-md-8 d-inline-block">
+        <div class="col-md-7 d-inline-block">
             <div class="panel panel-default">
                 <div class="panel-heading" style="background-color:  #095f59;">
                     <h3 class="panel-title">User Adjustements</h3>
                 </div>
                 <div class="panel-body">
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="well dash-box">
                             <h4><a href="Register.php">Register A New User</a></h4>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="well dash-box">
-                            <h4><a href="#">Delete/Upadte User</a></h4>
+                            <h4><a href="UserViewing.php">Change Password</a></h4>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="well dash-box">
-                            <h4><a href="#">Change Password</a></h4>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="well dash-box">
                             <h4><a href="UserViewing.php">View All Users</a></h4>
                         </div>
@@ -105,29 +82,26 @@ $num_rows = mysqli_num_rows($result);
             </div>
         </div>
 
-    <div class="col-md-4 d-inline-block">
+    <div class="col-md-5 d-inline-block">
         <div class="panel panel-default">
             <div class="panel-heading" style="background-color:  #095f59;">
                 <h3 class="panel-title">List of Users</h3>
             </div>
             <div class="panel-body">
-                <div class="col-md-3">
-                    <table>
+                    <table class = "table table-striped table-hover">
                         <tr>
                             <th>Username</th>
                             <th>Email</th>
                         </tr>
                         <?php while ($row = mysqli_fetch_array($result)):;?>
                         <tr>
-                            <th><?php echo $row[0]?></th>
-                            <th><?php echo $row[5]?></th>
+                            <th><?php echo $row['username']?></th>
+                            <th><?php echo $row['email']?></th>
                         </tr>
                         <?php endwhile ?>
 
 
                     </table>
-        <!--Yo table here -->
-
                 </div>
             </div>
         </div>

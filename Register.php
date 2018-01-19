@@ -15,7 +15,7 @@ include 'includes/nav.php';
             <div class="panel-body">
                 <div class="col-md-9">
                     <div class="well dash-box">
-                        <form class="form-horizontal" action="includes/registerUser.php">
+                        <form class="form-horizontal" method="post" action="includes/registerUser.php">
                             <div class="form-group">
                                 <label class="control-label col-sm-2" for="usernameTextInput">Username:</label>
                                 <div class="col-sm-10">
