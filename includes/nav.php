@@ -20,26 +20,24 @@
                 <li><a href="contact">Contact</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
+                <div>
                 <?php if ($_SESSION['role'] == 'Admin') {
                     ?>
-                    <li class="<?php if ($page_title == 'Admin Panel') echo "active" ?>"><a href="Admin.php">Admin
-                            Panel</a></li>
+                    <li class="<?php if ($page_title == 'Admin Panel') echo "active" ?>"><a href="Admin.php">Admin Panel</a></li>
+                    <li class="<?php if ($page_title == 'Profile page') echo "active" ?>"><a href="Profile.php">Profile Page</a></li>
                     <?php
-                } else if ($_SESSION['role'] == 'member') {
+                } else if ($_SESSION['role'] == 'User') {
                     ?>
-                    <li class="<?php if ($page_title == 'Profile page') echo "active" ?>"><a href="Admin.php">Admin
-                            Panel</a></li>
+                    <li class="<?php if ($page_title == 'Profile page') echo "active" ?>"><a href="Profile.php">Profile Page</a></li>
                     <?php
                 } else {
                     ?>
-
+                    <li class="<?php if ($page_title == 'Login') echo "active" ?>"><a href="Login.php">Login/Register</a></li>
+                    <li class="<?php if ($page_title == 'Admin Panel') echo "active" ?>"><a href="Admin.php">Admin Panel</a></li>
+                    <li class="<?php if ($page_title == 'Profile page') echo "active" ?>"><a href="Profile.php">Profile Page</a></li>
                     <?php
                 }
                 ?>
-                <li class="<?php if ($page_title == 'Login') echo "active" ?>"><a href="Login.php">Login/Register</a>
-                </li>
-                <li class="<?php if ($page_title == 'Admin Panel') echo "active" ?>"><a href="Admin.php">Admin Panel</a>
-                </li>
             </ul>
         </div><!-- /.nav-collapse -->
     </div><!-- /.container -->
