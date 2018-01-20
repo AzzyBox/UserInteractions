@@ -34,6 +34,5 @@ include 'includes/nav.php'
     I press Ctrl + K and this automatically pushes my work to the github repsoitory -->
 
     <!--Ctrl + / to make a comment-->
-
-
+    <!-- Latest compiled and minified JavaScript -->
     <!-- Latest compiled and minified JavaScript -->
